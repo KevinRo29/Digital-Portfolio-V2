@@ -1,0 +1,22 @@
+.bg-image {
+    background-image: url('../img/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos personalizados para emular Visual Studio Code */
+.bg-vscode-bg {
+    background-color: #1e1e1e; /* Color de fondo de VS Code */
+  }
+  
+  .text-vscode-white {
+    color: #d4d4d4; /* Color de texto principal de VS Code */
+  }
+  
+  .text-vscode-cyan {
+    color: #4ec9b0; /* Color de resaltado de VS Code */
+  }
