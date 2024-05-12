@@ -6,13 +6,13 @@ import AngularIcon from "../assets/svg/angular.svg";
 import TypeScriptIcon from "../assets/svg/typescript.svg";
 import FirebaseIcon from "../assets/svg/firebase.svg";
 
+import AppMobile from "../assets/img/gm-synergy.png";
 import VueIcon from "../assets/svg/vue.svg";
 import JavaScripIcon from "../assets/svg/javascript.svg";
 import TailwindCSSIcon from "../assets/svg/tailwind-css.svg";
 
-import PHPIcon from "../assets/svg/php.svg";
-import HTMLIcon from "../assets/svg/html.svg";
-import BootstrapIcon from "../assets/svg/bootstrap.svg";
+import StorageManagement from "../assets/img/storage-management.png";
+import Pythoncon from "../assets/svg/python.svg";
 
 function Projects() {
   return (
@@ -30,12 +30,12 @@ function Projects() {
       </div>
 
       {/* First Project */}
-      <div className="w-3/4 flex flex-col lg:flex-row items-center space-x-4 mx-auto">
+      <div className="w-3/4 flex flex-col lg:flex-row items-center mx-auto">
         {/* Image */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="relative w-full lg:w-1/3"
+          className="relative w-full lg:w-2/5"
         >
           <a
             href="https://github.com/KevinRo29/Thesis-app"
@@ -43,7 +43,7 @@ function Projects() {
             rel="noopener noreferrer"
           >
             <img
-              src="https://via.placeholder.com/300"
+              src={AppMobile}
               alt="Project 1"
               className="rounded-lg w-auto h-[275px] object-cover"
             />
@@ -51,7 +51,7 @@ function Projects() {
         </motion.div>
 
         {/* Description */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-3/5">
           <h3 className="text-xl font-bold text-white mt-4 sm:mt-0">
             Mobile Application
           </h3>
@@ -68,21 +68,25 @@ function Projects() {
           <div className="flex flex-row mt-2">
             <div className="flex flex-row space-x-6">
               <img
+                title="Ionic"
                 src={IonicIcon}
                 alt="Ionic"
                 className="w-12 h-12 rounded-lg"
               />
               <img
+                title="Angular"
                 src={AngularIcon}
                 alt="Angular"
                 className="w-12 h-12 rounded-lg"
               />
               <img
+                title="TypeScript"
                 src={TypeScriptIcon}
                 alt="TypeScript"
                 className="w-12 h-12 rounded-lg"
               />
               <img
+                title="Firebase"
                 src={FirebaseIcon}
                 alt="Firebase"
                 className="w-12 h-12 rounded-lg"
@@ -110,13 +114,20 @@ function Projects() {
           </p>
           <div className="flex flex-row justify-end mt-2">
             <div className="flex flex-row space-x-6">
-              <img src={VueIcon} alt="Vue" className="w-12 h-12 rounded-lg" />
               <img
+                title="Vue.js"
+                src={VueIcon}
+                alt="Vue"
+                className="w-12 h-12 rounded-lg"
+              />
+              <img
+                title="JavaScript"
                 src={JavaScripIcon}
                 alt="JavaScript"
                 className="w-12 h-12 rounded-lg"
               />
               <img
+                title="Tailwind CSS"
                 src={TailwindCSSIcon}
                 alt="Tailwind CSS"
                 className="w-12 h-12 rounded-lg"
@@ -139,7 +150,7 @@ function Projects() {
             <img
               src={DigitalPortfolioV1}
               alt="Project 2"
-              className="rounded-lg w-auto h-[275px] object-cover"
+              className="rounded-lg w-[425px] h-[275px] object-cover"
             />
           </a>
         </motion.div>
@@ -151,19 +162,23 @@ function Projects() {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="relative w-full lg:w-1/3"
+          className="relative w-full lg:w-2/5"
         >
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/KevinRo29/Storage-Management"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src="https://via.placeholder.com/300"
-              alt="Project 1"
+              src={StorageManagement}
+              alt="Project 3"
               className="rounded-lg w-auto h-[275px] object-cover"
             />
           </a>
         </motion.div>
 
         {/* Description */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-3/5">
           <h3 className="text-xl font-bold text-white mt-4 sm:mt-0">
             Integrated Inventory Control Project
           </h3>
@@ -179,14 +194,14 @@ function Projects() {
           </p>
           <div className="flex flex-row mt-2">
             <div className="flex flex-row space-x-6">
-              <img src={PHPIcon} alt="PHP" className="w-12 h-12 rounded-lg" />
-              <img src={HTMLIcon} alt="HTML" className="w-12 h-12 rounded-lg" />
               <img
-                src={BootstrapIcon}
-                alt="Bootstrap"
+                title="Python"
+                src={Pythoncon}
+                alt="Python"
                 className="w-12 h-12 rounded-lg"
               />
               <img
+                title="Firebase"
                 src={FirebaseIcon}
                 alt="Firebase"
                 className="w-12 h-12 rounded-lg"
