@@ -12,12 +12,12 @@ const Dashboard = () => {
   const translateY = useTransform(scrollY, [0, 577], [0, -300]);
 
   const technologies = [
-    { name: "Angular", icon: NodeJsIcon },
-    { name: "Firebase", icon: FirebaseIcon },
-    { name: "PHP", icon: PHPIcon },
-    { name: "HTML", icon: HTMLIcon },
-    { name: "SQL Server", icon: SQLServerIcon },
-    { name: "Tailwind CSS", icon: TailwindcssIcon },
+    { name: "Angular", icon: NodeJsIcon, title: "Angular"},
+    { name: "Firebase", icon: FirebaseIcon, title: "Firebase"},
+    { name: "PHP", icon: PHPIcon, title: "PHP"},
+    { name: "HTML", icon: HTMLIcon, title: "HTML"},
+    { name: "SQL Server", icon: SQLServerIcon, title: "SQL Server"},
+    { name: "Tailwind CSS", icon: TailwindcssIcon, title: "Tailwind CSS"},
   ];
 
   return (
@@ -71,6 +71,7 @@ const Dashboard = () => {
                   className="flex items-center justify-center bg-white w-8 h-8 lg:w-14 lg:h-14 rounded-full mb-2 lg:mb-0 mr-2 lg:mr-4"
                 >
                   <img
+                    title={technology.title}
                     src={technology.icon}
                     alt={technology.name}
                     className="w-6 h-6 lg:w-10 lg:h-10"

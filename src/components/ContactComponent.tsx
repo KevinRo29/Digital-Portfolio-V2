@@ -45,10 +45,24 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log(formData);
+    if (!isFormValid()) {
+      return;
+    }
+
+    //Open mailto with the form data
+    const mailto = `mailto:${email}?subject=Contact from ${name}&body=${message}%0D%0A%0D%0A${phone}`;
+    window.location.href = mailto;
+
+    // Clear form data
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
 
   const isFormValid = () => {
@@ -78,7 +92,7 @@ const Contact = () => {
         <h2 className="text-3xl font-semibold mb-4 text-gray-800">
           Contact Me!
         </h2>
-        <form className="space-y-4" onSubmit={handleSubmit}>
+        <form className="space-y-4" onSubmit={sendEmail}>
           <div className="flex flex-col">
             <label htmlFor="name" className="text-gray-700">
               Name

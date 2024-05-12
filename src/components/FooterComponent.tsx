@@ -40,7 +40,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-portfolio-500 text-white py-12">
+    <footer className="bg-portfolio-500 text-white px-6 py-4 lg:py-12">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         {/* Sección de navegación */}
         <div className="w-full md:w-1/4 mb-6 md:mb-0">
